@@ -14,14 +14,14 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
 @Composable
-fun PedidosScreen(modifier: Modifier = Modifier, navController: NavHostController) {
+fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController, cliente: String?) {
     Box(modifier = modifier
         .fillMaxSize()
         .background(Color(0xFFFA9A9A9))
         .padding(32.dp)
     ) {
         Text(
-            text = "PEDIDOS",
+            text = "PEDIDOS - $cliente",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White

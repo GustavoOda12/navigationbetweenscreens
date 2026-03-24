@@ -7,7 +7,6 @@ android {
     namespace = "com.example.navigationbetweenscreens"
     compileSdk {
         version = release(36) {
-            minorApiLevel = 1
         }
     }
 
@@ -24,10 +23,6 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
         }
     }
     compileOptions {
